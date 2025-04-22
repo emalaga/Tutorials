@@ -1,0 +1,11 @@
+.env
+*.csv
+/.venv
+dist/
+**/__pycache__/
+__pycache__/
+.DS_Store 
+# exclude everything in .config except the readme
+/config/*
+!/config/*.md
+/.vscode
