@@ -8,9 +8,13 @@ from langchain_community.agent_toolkits import SQLDatabaseToolkit
 from langchain import hub
 from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
-#from langchain_ibm import ChatWatsonx
+
+from IPython.display import display, Markdown #to render results
 
 env_path = "../.env"
+
+def render(text):
+    display(Markdown(text))
 
 class SQL_Agent:
 
@@ -37,16 +41,7 @@ class SQL_Agent:
         
     def set_llm(self, model_provider, model_name):
         load_dotenv(env_path)
-        match model_provider:
-            case "groq" | "openai":
-                self.llm = init_chat_model(model_name, model_provider=model_provider)
-#            case "watsonx":
-#                self.llm = ChatWatsonx(
-#                    model_id=model_name, 
-#                    url="https://us-south.ml.cloud.ibm.com", 
-#                    apikey=os.getenv("WATSONX_APIKEY"),
-#                    project_id=os.getenv("WATSONX_PROJECT_ID")
-#)
+        self.llm = init_chat_model(model_name, model_provider=model_provider)
 
     def set_db(self,database_uri):
         self.db = SQLDatabase.from_uri(database_uri, view_support = True)
@@ -60,9 +55,8 @@ class SQL_Agent:
         assert len(self.prompt_template.messages) == 1
         self.system_message = self.prompt_template.format(dialect=dialect, top_k=top_k)
 
-    def set_custom_prompt(self, dialect, top_k, custom_prompt):
-        self.prompt_template = custom_prompt
-        self.system_message = self.prompt_template.format(dialect=dialect, top_k=top_k)
+    def set_custom_system_message(self, custom_system_message):
+        self.system_message = custom_system_message
 
     def initialize_agent(self):
         self.agent_executor = create_react_agent(self.llm, self.tools, prompt=self.system_message)
@@ -76,8 +70,13 @@ class SQL_Agent:
         return(response)
     
     def stream_answer(self,question):
+        last_message = None
+
         for step in self.agent_executor.stream(
             {"messages": [{"role": "user", "content": question}]},
             stream_mode="values",
         ):
-            step["messages"][-1].pretty_print()
+            last_message = step["messages"][-1]
+            last_message.pretty_print()
+
+        return last_message.content if last_message else None
