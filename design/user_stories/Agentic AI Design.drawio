@@ -1,16 +1,16 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:142.0) Gecko/20100101 Firefox/142.0" version="28.2.0">
   <diagram id="prtHgNgQTEPvFCAcTncT" name="Page-1">
-    <mxGraphModel dx="2102" dy="1342" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1892" dy="1208" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="dNxyNK7c78bLwvsdeMH5-19" value="Wire transfer" style="swimlane;html=1;childLayout=stackLayout;resizeParent=1;resizeParentMax=0;horizontal=0;startSize=20;horizontalStack=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fillColor=#E6E6E6;" parent="1" vertex="1">
-          <mxGeometry x="50" y="570" width="1010" height="610" as="geometry" />
+          <mxGeometry x="50" y="579" width="1010" height="610" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-5" value="Bank Customer" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-19">
+        <mxCell id="prQDkEr1eViR26II4pkI-5" value="Bank Customer" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
           <mxGeometry x="20" width="990" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="prQDkEr1eViR26II4pkI-5" source="dNxyNK7c78bLwvsdeMH5-23" target="prQDkEr1eViR26II4pkI-68">
+        <mxCell id="prQDkEr1eViR26II4pkI-70" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="prQDkEr1eViR26II4pkI-5" source="dNxyNK7c78bLwvsdeMH5-23" target="prQDkEr1eViR26II4pkI-68" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="dNxyNK7c78bLwvsdeMH5-23" value="" style="ellipse;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
@@ -19,85 +19,85 @@
         <mxCell id="dNxyNK7c78bLwvsdeMH5-24" value="Customer asks to do a wire transfer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSize=9;fontColor=#000000;align=left;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
           <mxGeometry x="270" y="30" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-15" value="Customer confirms" style="rhombus;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=center;spacingRight=0;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-5">
+        <mxCell id="prQDkEr1eViR26II4pkI-15" value="Customer confirms" style="rhombus;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=center;spacingRight=0;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
           <mxGeometry x="624" y="20" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-21" value="&lt;div style=&quot;margin-right: 0px; margin-top: 0px; padding-right: 0px; padding-left: 0px;&quot;&gt;Customer provides:&amp;nbsp;&lt;br&gt;- recipient_account&lt;br&gt;- bank_code&lt;br&gt;- amount&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=left;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;spacingRight=0;spacingLeft=25;" vertex="1" parent="prQDkEr1eViR26II4pkI-5">
-          <mxGeometry x="434" y="40" width="150" height="50" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-21" value="&lt;div style=&quot;margin-right: 0px; margin-top: 0px; padding-right: 0px; padding-left: 0px;&quot;&gt;Customer provides:&lt;br&gt;- source account&amp;nbsp;&lt;br&gt;- recipient_account&lt;br&gt;- bank_code&lt;br&gt;- amount&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;align=left;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;spacingRight=0;spacingLeft=25;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
+          <mxGeometry x="434" y="20" width="150" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-23" value="No" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;spacingRight=0;spacingLeft=4;" vertex="1" parent="prQDkEr1eViR26II4pkI-5">
+        <mxCell id="prQDkEr1eViR26II4pkI-23" value="No" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
           <mxGeometry x="674" y="10" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-24" value="Yes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;spacingRight=0;spacingLeft=4;" vertex="1" parent="prQDkEr1eViR26II4pkI-5">
+        <mxCell id="prQDkEr1eViR26II4pkI-24" value="Yes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
           <mxGeometry x="674" y="80" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-68" value="Customer logins in bank portal" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSize=9;fontColor=#000000;align=left;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" vertex="1" parent="prQDkEr1eViR26II4pkI-5">
+        <mxCell id="prQDkEr1eViR26II4pkI-68" value="Customer logins in bank portal" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSize=9;fontColor=#000000;align=left;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-5" vertex="1">
           <mxGeometry x="110" y="30" width="110" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dNxyNK7c78bLwvsdeMH5-20" value="Bank AI Agent" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
           <mxGeometry x="20" y="120" width="990" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-6" value="Agent asks customer for: recipient account, recipient bank code and amount" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+        <mxCell id="prQDkEr1eViR26II4pkI-6" value="Agent asks customer for: recipient account, recipient bank code and amount" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
           <mxGeometry x="264" y="30" width="120" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-12" value="Agent displays the information again and asks for confirmation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+        <mxCell id="prQDkEr1eViR26II4pkI-12" value="Agent displays the information again and asks for confirmation" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
           <mxGeometry x="449" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-17" value="Agent submits wire transfer request" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-20">
+        <mxCell id="prQDkEr1eViR26II4pkI-17" value="Agent submits wire transfer request" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-20" vertex="1">
           <mxGeometry x="604" y="40" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="dNxyNK7c78bLwvsdeMH5-21" value="Bank system" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
           <mxGeometry x="20" y="250" width="990" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-21" source="prQDkEr1eViR26II4pkI-18" target="prQDkEr1eViR26II4pkI-60">
+        <mxCell id="prQDkEr1eViR26II4pkI-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-21" source="prQDkEr1eViR26II4pkI-18" target="prQDkEr1eViR26II4pkI-60" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-18" value="Bank system submits the wire transfr request" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
+        <mxCell id="prQDkEr1eViR26II4pkI-18" value="Bank system submits the wire transfr request" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
           <mxGeometry x="604" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-21" source="prQDkEr1eViR26II4pkI-60" target="prQDkEr1eViR26II4pkI-66">
+        <mxCell id="prQDkEr1eViR26II4pkI-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="dNxyNK7c78bLwvsdeMH5-21" source="prQDkEr1eViR26II4pkI-60" target="prQDkEr1eViR26II4pkI-66" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-60" value="Bank sends notification to user" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
+        <mxCell id="prQDkEr1eViR26II4pkI-60" value="Bank sends notification to user" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
           <mxGeometry x="754" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-66" value="" style="ellipse;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
+        <mxCell id="prQDkEr1eViR26II4pkI-66" value="" style="ellipse;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
           <mxGeometry x="904" y="40" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-69" value="Bank system validates credentials" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSize=9;fontColor=#000000;align=left;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-21">
+        <mxCell id="prQDkEr1eViR26II4pkI-69" value="Bank system validates credentials" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSize=9;fontColor=#000000;align=left;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-21" vertex="1">
           <mxGeometry x="110" y="30" width="110" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-28" value="Recipient Bank" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-19">
+        <mxCell id="prQDkEr1eViR26II4pkI-28" value="Recipient Bank" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
           <mxGeometry x="20" y="370" width="990" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="prQDkEr1eViR26II4pkI-28" source="prQDkEr1eViR26II4pkI-30" target="prQDkEr1eViR26II4pkI-59">
+        <mxCell id="prQDkEr1eViR26II4pkI-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="prQDkEr1eViR26II4pkI-28" source="prQDkEr1eViR26II4pkI-30" target="prQDkEr1eViR26II4pkI-59" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-30" value="Bank receives transfer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="prQDkEr1eViR26II4pkI-28">
+        <mxCell id="prQDkEr1eViR26II4pkI-30" value="Bank receives transfer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-28" vertex="1">
           <mxGeometry x="604" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-59" value="Bank notifies customer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" vertex="1" parent="prQDkEr1eViR26II4pkI-28">
+        <mxCell id="prQDkEr1eViR26II4pkI-59" value="Bank notifies customer" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-28" vertex="1">
           <mxGeometry x="754" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-31" value="Recipient" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="dNxyNK7c78bLwvsdeMH5-19">
+        <mxCell id="prQDkEr1eViR26II4pkI-31" value="Recipient" style="swimlane;html=1;startSize=20;horizontal=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="dNxyNK7c78bLwvsdeMH5-19" vertex="1">
           <mxGeometry x="20" y="490" width="990" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-57" value="" style="ellipse;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" vertex="1" parent="prQDkEr1eViR26II4pkI-31">
+        <mxCell id="prQDkEr1eViR26II4pkI-57" value="" style="ellipse;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;spacingRight=0;spacingLeft=4;" parent="prQDkEr1eViR26II4pkI-31" vertex="1">
           <mxGeometry x="898" y="40" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="prQDkEr1eViR26II4pkI-31" source="prQDkEr1eViR26II4pkI-63" target="prQDkEr1eViR26II4pkI-57">
+        <mxCell id="prQDkEr1eViR26II4pkI-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="prQDkEr1eViR26II4pkI-31" source="prQDkEr1eViR26II4pkI-63" target="prQDkEr1eViR26II4pkI-57" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-63" value="Recipient collects money" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=10;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-31">
+        <mxCell id="prQDkEr1eViR26II4pkI-63" value="Recipient collects money" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=10;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-31" vertex="1">
           <mxGeometry x="754" y="30" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="dNxyNK7c78bLwvsdeMH5-24" target="prQDkEr1eViR26II4pkI-6">
+        <mxCell id="prQDkEr1eViR26II4pkI-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="dNxyNK7c78bLwvsdeMH5-24" target="prQDkEr1eViR26II4pkI-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-12" target="prQDkEr1eViR26II4pkI-15">
+        <mxCell id="prQDkEr1eViR26II4pkI-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-12" target="prQDkEr1eViR26II4pkI-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-15">
+        <mxCell id="prQDkEr1eViR26II4pkI-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="284" y="180" as="targetPoint" />
             <Array as="points">
@@ -108,7 +108,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-6" target="prQDkEr1eViR26II4pkI-21">
+        <mxCell id="prQDkEr1eViR26II4pkI-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-6" target="prQDkEr1eViR26II4pkI-21" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="434" y="190" />
@@ -116,25 +116,25 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-15" target="prQDkEr1eViR26II4pkI-17">
+        <mxCell id="prQDkEr1eViR26II4pkI-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-15" target="prQDkEr1eViR26II4pkI-17" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-17" target="prQDkEr1eViR26II4pkI-18">
+        <mxCell id="prQDkEr1eViR26II4pkI-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-17" target="prQDkEr1eViR26II4pkI-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-21" target="prQDkEr1eViR26II4pkI-12">
+        <mxCell id="prQDkEr1eViR26II4pkI-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontSize=9;align=left;spacingRight=0;spacingLeft=4;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-21" target="prQDkEr1eViR26II4pkI-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-18" target="prQDkEr1eViR26II4pkI-30">
+        <mxCell id="prQDkEr1eViR26II4pkI-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-18" target="prQDkEr1eViR26II4pkI-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-59" target="prQDkEr1eViR26II4pkI-63">
+        <mxCell id="prQDkEr1eViR26II4pkI-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-59" target="prQDkEr1eViR26II4pkI-63" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-68" target="prQDkEr1eViR26II4pkI-69">
+        <mxCell id="prQDkEr1eViR26II4pkI-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-68" target="prQDkEr1eViR26II4pkI-69" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-69" target="dNxyNK7c78bLwvsdeMH5-24">
+        <mxCell id="prQDkEr1eViR26II4pkI-73" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="dNxyNK7c78bLwvsdeMH5-19" source="prQDkEr1eViR26II4pkI-69" target="dNxyNK7c78bLwvsdeMH5-24" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="250" y="310" />
@@ -142,225 +142,491 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-74" value="&lt;div align=&quot;left&quot;&gt;Wire transfer&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=24;" vertex="1" parent="1">
-          <mxGeometry x="50" y="40" width="160" height="30" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-74" value="&lt;div align=&quot;left&quot;&gt;Wire transfer&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=24;" parent="1" vertex="1">
+          <mxGeometry x="50" y="49" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-75" value="" style="group;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="50" y="230" width="490" height="110" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-75" value="" style="group;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="50" y="239" width="490" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-76" value="&lt;div align=&quot;left&quot;&gt;User Story&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=0.5;align=left;spacingLeft=10;fillStyle=solid;gradientColor=none;fillColor=light-dark(#E6E6E6,#EDEDED);fontStyle=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-75">
+        <mxCell id="prQDkEr1eViR26II4pkI-76" value="&lt;div align=&quot;left&quot;&gt;User Story&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=0.5;align=left;spacingLeft=10;fillStyle=solid;gradientColor=none;fillColor=light-dark(#E6E6E6,#EDEDED);fontStyle=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-75" vertex="1">
           <mxGeometry width="490" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-77" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-75">
+        <mxCell id="prQDkEr1eViR26II4pkI-77" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-75" vertex="1">
           <mxGeometry y="30" width="490" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-78" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-77">
+        <mxCell id="prQDkEr1eViR26II4pkI-78" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-77" vertex="1">
           <mxGeometry width="490" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-79" value="Who?&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=2" vertex="1" parent="prQDkEr1eViR26II4pkI-78">
+        <mxCell id="prQDkEr1eViR26II4pkI-79" value="Who?&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=2" parent="prQDkEr1eViR26II4pkI-78" vertex="1">
           <mxGeometry width="77" height="20" as="geometry">
             <mxRectangle width="77" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-80" value="As a ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-78">
+        <mxCell id="prQDkEr1eViR26II4pkI-80" value="As a ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-78" vertex="1">
           <mxGeometry x="77" width="104" height="20" as="geometry">
             <mxRectangle width="104" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-81" value="bank customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-78">
+        <mxCell id="prQDkEr1eViR26II4pkI-81" value="bank customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-78" vertex="1">
           <mxGeometry x="181" width="309" height="20" as="geometry">
             <mxRectangle width="309" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-82" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-77">
+        <mxCell id="prQDkEr1eViR26II4pkI-82" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-77" vertex="1">
           <mxGeometry y="20" width="490" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-83" value="&lt;i&gt;When?&amp;nbsp;&lt;/i&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-82">
+        <mxCell id="prQDkEr1eViR26II4pkI-83" value="&lt;i&gt;When?&amp;nbsp;&lt;/i&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-82" vertex="1">
           <mxGeometry width="77" height="20" as="geometry">
             <mxRectangle width="77" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-84" value="when ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-82">
+        <mxCell id="prQDkEr1eViR26II4pkI-84" value="when ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-82" vertex="1">
           <mxGeometry x="77" width="104" height="20" as="geometry">
             <mxRectangle width="104" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-85" value="I need to send money" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-82">
+        <mxCell id="prQDkEr1eViR26II4pkI-85" value="I need to send money" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-82" vertex="1">
           <mxGeometry x="181" width="309" height="20" as="geometry">
             <mxRectangle width="309" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-86" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-77">
+        <mxCell id="prQDkEr1eViR26II4pkI-86" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-77" vertex="1">
           <mxGeometry y="40" width="490" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-87" value="&lt;div&gt;What?&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=2" vertex="1" parent="prQDkEr1eViR26II4pkI-86">
+        <mxCell id="prQDkEr1eViR26II4pkI-87" value="&lt;div&gt;What?&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=2" parent="prQDkEr1eViR26II4pkI-86" vertex="1">
           <mxGeometry width="77" height="20" as="geometry">
             <mxRectangle width="77" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-88" value="I want to ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-86">
+        <mxCell id="prQDkEr1eViR26II4pkI-88" value="I want to ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-86" vertex="1">
           <mxGeometry x="77" width="104" height="20" as="geometry">
             <mxRectangle width="104" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-89" value="submit a wire transfer in an easy and simple way" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-86">
+        <mxCell id="prQDkEr1eViR26II4pkI-89" value="submit a wire transfer in an easy and simple way" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-86" vertex="1">
           <mxGeometry x="181" width="309" height="20" as="geometry">
             <mxRectangle width="309" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-90" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-77">
+        <mxCell id="prQDkEr1eViR26II4pkI-90" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-77" vertex="1">
           <mxGeometry y="60" width="490" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-91" value="Why?&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=2" vertex="1" parent="prQDkEr1eViR26II4pkI-90">
+        <mxCell id="prQDkEr1eViR26II4pkI-91" value="Why?&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=2" parent="prQDkEr1eViR26II4pkI-90" vertex="1">
           <mxGeometry width="77" height="20" as="geometry">
             <mxRectangle width="77" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-92" value="so I can ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-90">
+        <mxCell id="prQDkEr1eViR26II4pkI-92" value="so I can ..." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-90" vertex="1">
           <mxGeometry x="77" width="104" height="20" as="geometry">
             <mxRectangle width="104" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-93" value="save time and frustration" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" vertex="1" parent="prQDkEr1eViR26II4pkI-90">
+        <mxCell id="prQDkEr1eViR26II4pkI-93" value="save time and frustration" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;align=left;spacingLeft=10;strokeWidth=0.5;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;" parent="prQDkEr1eViR26II4pkI-90" vertex="1">
           <mxGeometry x="181" width="309" height="20" as="geometry">
             <mxRectangle width="309" height="20" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-96" value="User Story" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="50" y="110" width="160" height="30" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-96" value="User Story" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="50" y="119" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-97" value="&lt;div&gt;A user story describes a process as a story highlighting the main actor, their goal and motivation and the context about when or where this happens.&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
-          <mxGeometry x="50" y="130" width="420" height="70" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-97" value="&lt;div&gt;A user story describes a process as a story highlighting the main actor, their goal and motivation and the context about when or where this happens.&amp;nbsp;&lt;/div&gt;" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="139" width="420" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-98" value="Swimlane" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="50" y="426" width="160" height="30" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-98" value="Swimlane" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="50" y="435" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-99" value="A swimlane diagram describes a process as a workflow assigning single steps to all the actors (either humans, entities or systems) and including decision points, data collection, processing tasks and dependencies." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
-          <mxGeometry x="50" y="446" width="420" height="70" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-99" value="A swimlane diagram describes a process as a workflow assigning single steps to all the actors (either humans, entities or systems) and including decision points, data collection, processing tasks and dependencies." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="455" width="420" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-100" value="Agentic Acceptance Criteria" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" vertex="1" parent="1">
-          <mxGeometry x="50" y="1260" width="320" height="30" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-100" value="Agentic Acceptance Criteria" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1269" width="320" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-101" value="A swimlane diagram describes a process as a workflow assigning single steps to all the actors (either humans, entities or systems) and including decision points, data collection, processing tasks and dependencies." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
-          <mxGeometry x="50" y="1280" width="420" height="70" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-101" value="The acceptance criteria captures different aspects typically associated to Agentic development that further clarify what is considered acceptable for the agentic workflow." style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1289" width="420" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-102" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;align=left;" vertex="1" parent="1">
-          <mxGeometry x="60" y="1410" width="490" height="260" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-102" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;align=left;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="1409" width="450" height="312" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-103" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
-          <mxGeometry width="490" height="52" as="geometry" />
+        <mxCell id="prQDkEr1eViR26II4pkI-103" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="prQDkEr1eViR26II4pkI-102" vertex="1">
+          <mxGeometry width="450" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-104" value="Criterion" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-103">
+        <mxCell id="prQDkEr1eViR26II4pkI-104" value="Criterion" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;strokeWidth=1;" parent="prQDkEr1eViR26II4pkI-103" vertex="1">
           <mxGeometry width="123" height="52" as="geometry">
             <mxRectangle width="123" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-105" value="Value" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-103">
+        <mxCell id="prQDkEr1eViR26II4pkI-105" value="Value" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" parent="prQDkEr1eViR26II4pkI-103" vertex="1">
           <mxGeometry x="123" width="122" height="52" as="geometry">
             <mxRectangle width="122" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-106" value="Description" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-103">
+        <mxCell id="prQDkEr1eViR26II4pkI-106" value="Description" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" parent="prQDkEr1eViR26II4pkI-103" vertex="1">
           <mxGeometry x="245" width="205" height="52" as="geometry">
             <mxRectangle width="205" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-107" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-103">
-          <mxGeometry x="450" width="40" height="52" as="geometry">
-            <mxRectangle width="40" height="52" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-1" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
+          <mxGeometry y="52" width="450" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-108" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
-          <mxGeometry y="52" width="490" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-109" value="Accuraccy" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-108">
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-2" value="Behavior" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-1">
           <mxGeometry width="123" height="52" as="geometry">
             <mxRectangle width="123" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-110" value="%95" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-108">
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-3" value="Professional" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-1">
           <mxGeometry x="123" width="122" height="52" as="geometry">
             <mxRectangle width="122" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-111" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-108">
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-4" value="The agent should communicate professionally and reply using only information grounded on data" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-1">
           <mxGeometry x="245" width="205" height="52" as="geometry">
             <mxRectangle width="205" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-112" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-108">
-          <mxGeometry x="450" width="40" height="52" as="geometry">
-            <mxRectangle width="40" height="52" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
+          <mxGeometry y="104" width="450" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-113" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
-          <mxGeometry y="104" width="490" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-114" value="Guardrails" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-113">
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-6" value="Responsiveness" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-5">
           <mxGeometry width="123" height="52" as="geometry">
             <mxRectangle width="123" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-115" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-113">
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-7" value="&amp;lt; 2 seconds" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-5">
           <mxGeometry x="123" width="122" height="52" as="geometry">
             <mxRectangle width="122" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-116" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-113">
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-8" value="Agent average response should be under 2 seconds.&amp;nbsp;" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-5">
           <mxGeometry x="245" width="205" height="52" as="geometry">
             <mxRectangle width="205" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-117" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-113">
-          <mxGeometry x="450" width="40" height="52" as="geometry">
-            <mxRectangle width="40" height="52" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="prQDkEr1eViR26II4pkI-108" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="prQDkEr1eViR26II4pkI-102" vertex="1">
+          <mxGeometry y="156" width="450" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-118" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
-          <mxGeometry y="156" width="490" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-119" value="Auditability" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-118">
+        <mxCell id="prQDkEr1eViR26II4pkI-109" value="Accuraccy" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-108" vertex="1">
           <mxGeometry width="123" height="52" as="geometry">
             <mxRectangle width="123" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-120" value="Logs" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-118">
+        <mxCell id="prQDkEr1eViR26II4pkI-110" value="100%" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-108" vertex="1">
           <mxGeometry x="123" width="122" height="52" as="geometry">
             <mxRectangle width="122" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-121" value="Logs of conversation and submissions should be kept for a year" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-118">
+        <mxCell id="prQDkEr1eViR26II4pkI-111" value="The agent should only submit wires when absolutely sure that the information is correct." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-108" vertex="1">
           <mxGeometry x="245" width="205" height="52" as="geometry">
             <mxRectangle width="205" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-122" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-118">
-          <mxGeometry x="450" width="40" height="52" as="geometry">
-            <mxRectangle width="40" height="52" as="alternateBounds" />
-          </mxGeometry>
+        <mxCell id="prQDkEr1eViR26II4pkI-118" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="prQDkEr1eViR26II4pkI-102" vertex="1">
+          <mxGeometry y="208" width="450" height="52" as="geometry" />
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-123" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="prQDkEr1eViR26II4pkI-102">
-          <mxGeometry y="208" width="490" height="52" as="geometry" />
-        </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-124" value="Fail route" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-123">
+        <mxCell id="prQDkEr1eViR26II4pkI-119" value="Auditability" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-118" vertex="1">
           <mxGeometry width="123" height="52" as="geometry">
             <mxRectangle width="123" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-125" value="Human Agent" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-123">
+        <mxCell id="prQDkEr1eViR26II4pkI-120" value="Logs" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-118" vertex="1">
           <mxGeometry x="123" width="122" height="52" as="geometry">
             <mxRectangle width="122" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-126" value="When AI Agent can&#39;t complete task for some reason it should redirect conversation to a human" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-123">
+        <mxCell id="prQDkEr1eViR26II4pkI-121" value="Logs of conversation and submissions should be kept for a year" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-118" vertex="1">
           <mxGeometry x="245" width="205" height="52" as="geometry">
             <mxRectangle width="205" height="52" as="alternateBounds" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="prQDkEr1eViR26II4pkI-127" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="prQDkEr1eViR26II4pkI-123">
-          <mxGeometry x="450" width="40" height="52" as="geometry">
-            <mxRectangle width="40" height="52" as="alternateBounds" />
+        <mxCell id="prQDkEr1eViR26II4pkI-123" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="prQDkEr1eViR26II4pkI-102" vertex="1">
+          <mxGeometry y="260" width="450" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="prQDkEr1eViR26II4pkI-124" value="Guardrails / Fail Route" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-123" vertex="1">
+          <mxGeometry width="123" height="52" as="geometry">
+            <mxRectangle width="123" height="52" as="alternateBounds" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="prQDkEr1eViR26II4pkI-125" value="Human Agent" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-123" vertex="1">
+          <mxGeometry x="123" width="122" height="52" as="geometry">
+            <mxRectangle width="122" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prQDkEr1eViR26II4pkI-126" value="When AI Agent can&#39;t complete task for some reason it should redirect conversation to a human" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" parent="prQDkEr1eViR26II4pkI-123" vertex="1">
+          <mxGeometry x="245" width="205" height="52" as="geometry">
+            <mxRectangle width="205" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-9" value="Input Process Output Model" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="441" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-10" value="This model focuses on capturing all the initial input variables and the final output variables and outcomes of the process" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=0;fontSize=17;labelPosition=center;verticalLabelPosition=middle;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="461" width="420" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-11" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;align=left;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="581" width="690" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-12" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-11">
+          <mxGeometry width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-13" value="Variable" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-12">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-14" value="Sample" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-12">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-15" value="Description" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-12">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-36" value="Source" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-12">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-76" value="Destination" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-12">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-16" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-11">
+          <mxGeometry y="52" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-17" value="source_account" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-16">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-18" value="23452345" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-16">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-19" value="The customer&#39;s source account to withdraw funds from" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-16">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-37" value="Bank customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-16">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-77" value="Bank Agent" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-16">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-20" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-11">
+          <mxGeometry y="104" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-21" value="recipient_account" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-20">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-22" value="23452344" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-20">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-23" value="The recipient&#39;s account to send the funds to" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-20">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-38" value="Bank customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-20">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-78" value="Bank Agent" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-20">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-24" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-11">
+          <mxGeometry y="156" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-25" value="bank_code" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-24">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-26" value="XYZ" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-24">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-27" value="The recipient&#39;s bank&#39;s code" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-24">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-39" value="Bank customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-24">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-79" value="Bank Agent" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-24">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-28" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-11">
+          <mxGeometry y="208" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-29" value="amount" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-28">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-30" value="1,000" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-28">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-31" value="The amount to be transferred" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-28">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-40" value="Bank customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-28">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-80" value="Bank Agent" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-28">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-43" value="Input&amp;nbsp;" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="551" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-44" value="" style="shape=table;startSize=0;container=1;collapsible=0;childLayout=tableLayout;align=left;strokeWidth=1;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="917" width="690" height="208" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-45" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-44">
+          <mxGeometry width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-46" value="Variable / Action" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;strokeWidth=1;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-45">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-47" value="Sample" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-45">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-48" value="Description" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-45">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-49" value="Source" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-45">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-82" value="Destination" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=#E6E6E6;top=1;left=1;bottom=1;right=1;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;fontStyle=1;labelBackgroundColor=none;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-45">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-50" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-44">
+          <mxGeometry y="52" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-51" value="customer notification" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-50">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-52" value="Your wire transfer has been sent." style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-50">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-53" value="A message to the customer with details of the completion" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-50">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-54" value="Bank system" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-50">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-83" value="Customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-50">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-55" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-44">
+          <mxGeometry y="104" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-56" value="recipient notification" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-55">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-57" value="You have received a transer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-55">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-58" value="A message to the recipient customer with details of the transfer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-55">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-59" value="Recipient bank" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-55">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-84" value="Recipient customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-55">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-60" value="" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-44">
+          <mxGeometry y="156" width="690" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-61" value="money being transfered" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-60">
+          <mxGeometry width="107" height="52" as="geometry">
+            <mxRectangle width="107" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-62" value="" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-60">
+          <mxGeometry x="107" width="106" height="52" as="geometry">
+            <mxRectangle width="106" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-63" value="Money being removed from source account and deposited into transfer account" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-60">
+          <mxGeometry x="213" width="237" height="52" as="geometry">
+            <mxRectangle width="237" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-64" value="Bank system" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-60">
+          <mxGeometry x="450" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-85" value="Bank Customer / Recipient customer" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;align=left;spacingLeft=3;" vertex="1" parent="vnjUYWhQveKUGR-nhXfP-60">
+          <mxGeometry x="570" width="120" height="52" as="geometry">
+            <mxRectangle width="120" height="52" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-75" value="Output / Outcomes" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=IBM Plex Sans;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DIBM%2BPlex%2BSans;fontStyle=1;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="1170" y="887" width="320" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vnjUYWhQveKUGR-nhXfP-88" value="" style="shape=singleArrow;direction=south;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="850" width="30" height="59" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
