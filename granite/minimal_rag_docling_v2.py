@@ -45,6 +45,15 @@ if rebuild:
     st.session_state.rebuild_nonce += 1
 
 
+# ----------------- Chat state priming -----------------
+default_greeting = "Upload a PDF on the left and ask me anything about it!"
+if "messages" not in st.session_state:
+    st.session_state.messages = [{"role": "assistant", "content": default_greeting}]
+if clear:
+    st.session_state.messages = [{"role": "assistant", "content": default_greeting}]
+    st.session_state.pop("last_loaded_file_hash", None)
+
+
 # ----------------- Caching: model + retriever -----------------
 @st.cache_resource(show_spinner=False)
 def get_chat(model_name: str, temp: float):
@@ -119,6 +128,12 @@ if uploaded_file is not None:
     hasher.update(uploaded_bytes)
     file_hash = hasher.hexdigest()
     display_name = uploaded_file.name
+
+    # Reset chat history when a new file is detected
+    if st.session_state.get("last_loaded_file_hash") != file_hash:
+        st.session_state.messages = [{"role": "assistant", "content": default_greeting}]
+        st.session_state["last_loaded_file_hash"] = file_hash
+
     try:
         retriever = build_retriever_from_pdfbytes(
             file_hash=file_hash,
@@ -184,11 +199,6 @@ def rag_answer(user_q: str, history, retriever, chat):
     return answer_msg.content.strip(), ctx_docs
 
 
-# ----------------- Chat state -----------------
-default_greeting = "Upload a PDF on the left and ask me anything about it!"
-if "messages" not in st.session_state or clear:
-    st.session_state.messages = [{"role": "assistant", "content": default_greeting}]
-
 # Show any build error prominently
 if error_building:
     st.error(f"Failed to build the retriever from the PDF.\n\nDetails: {error_building}")
@@ -228,13 +238,17 @@ else:
             if ctx_docs:
                 with st.expander("Sources"):
                     seen = set()
-                    for d in ctx_docs:
-                        ttl = d.metadata.get("title", display_name or "Uploaded PDF")
-                        src = d.metadata.get("source", display_name or "uploaded-pdf")
-                        key = (ttl, src)
+                    for idx, d in enumerate(ctx_docs, start=1):
+                        excerpt = d.page_content.strip()
+                        if not excerpt:
+                            continue
+                        key = hashlib.md5(excerpt.encode("utf-8")).hexdigest()
                         if key in seen:
                             continue
                         seen.add(key)
-                        st.markdown(f"- **{ttl}** — _{src}_")
+                        if len(excerpt) > 600:
+                            excerpt = excerpt[:600].rstrip() + "…"
+                        ttl = d.metadata.get("title", display_name or "Uploaded PDF")
+                        st.markdown(f"**Passage {idx} — {ttl}**\n\n{excerpt}")
 
         st.session_state.messages.append({"role": "assistant", "content": answer})
