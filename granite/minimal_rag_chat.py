@@ -1,4 +1,10 @@
 
+import os
+
+# Allow the FAISS/OpenMP stack to load in environments (like macOS) where multiple
+# OpenMP runtimes may already be present. Without this the process aborts on import.
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
 from langchain_ollama import ChatOllama, OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
@@ -80,7 +86,7 @@ def chat_loop():
 
         print(f"\n=>History: \n{history}")
         print(f"\n=>Standalone question: {standalone_q}")
-        print(f"\n=>Retrieved {len(ctx_docs)} docs:\n{context}\n")
+        #print(f"\n=>Retrieved {len(ctx_docs)} docs:\n{context}\n")
 
         # 3) Final answer (uses history + context + original question)
         answer_msg = answer_chain.invoke({

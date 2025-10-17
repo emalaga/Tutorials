@@ -24,12 +24,12 @@ st.caption("Enter a URL (e.g., a Wikipedia page). The app fetches, chunks, embed
 # ----------------- Sidebar controls -----------------
 with st.sidebar:
     st.subheader("Settings")
-    default_url = "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
+    default_url = "https://en.wikipedia.org/wiki/Bridget_Jones%27s_Baby"
     url = st.text_input("Source URL", value=default_url, help="Any public web page. Wikipedia works great.").strip()
     k = st.number_input("Top-K passages", min_value=1, max_value=8, value=2, step=1)
     chunk_size = st.number_input("Chunk size (chars)", min_value=200, max_value=4000, value=1200, step=100)
     chunk_overlap = st.number_input("Chunk overlap", min_value=0, max_value=1000, value=200, step=50)
-    model = st.text_input("LLM model", value="granite4:micro")
+    model = st.text_input("LLM model", value="granite4:micro", disabled=True)
     temperature = st.slider("Temperature", 0.0, 1.0, 0.2, 0.1)
 
     col1, col2 = st.columns(2)
@@ -147,9 +147,12 @@ def fmt_context(docs):
                        for d in docs)
 
 def rag_answer(user_q: str, history, retriever, chat):
+    start_time = time.perf_counter()
+    lc_history = to_lc_history(history)
+
     # 1) Condense follow-up
     standalone_q = (CONDENSE_PROMPT | chat).invoke({
-        "chat_history": to_lc_history(history),
+        "chat_history": lc_history,
         "question": user_q
     }).content.strip()
 
@@ -159,15 +162,18 @@ def rag_answer(user_q: str, history, retriever, chat):
 
     # 3) Answer with context + history
     answer_msg = (ANSWER_PROMPT | chat).invoke({
-        "chat_history": to_lc_history(history),
+        "chat_history": lc_history,
         "question": user_q,
         "context": context
     })
-    return answer_msg.content.strip(), ctx_docs
 
-# ----------------- Chat state -----------------
-if "messages" not in st.session_state or clear:
-    st.session_state.messages = [{"role": "assistant", "content": "Paste a URL on the left and ask me anything about it!"}]
+    elapsed = time.perf_counter() - start_time
+    details = {
+        "elapsed": elapsed,
+        "original_question": user_q,
+        "standalone_question": standalone_q,
+    }
+    return answer_msg.content.strip(), ctx_docs, details
 
 # Show any build error prominently
 if error_building:
@@ -188,12 +194,14 @@ if user_q:
     if retriever is None:
         answer = "⚠️ I couldn't index the URL. Please adjust the URL or try rebuilding the index."
         ctx_docs = []
+        details = None
     else:
         try:
-            answer, ctx_docs = rag_answer(user_q, st.session_state.messages, retriever, chat)
+            answer, ctx_docs, details = rag_answer(user_q, st.session_state.messages, retriever, chat)
         except Exception as e:
             answer = f"⚠️ Error talking to the local model or retriever. Is Ollama running? Details: {e}"
             ctx_docs = []
+            details = None
 
     with st.chat_message("assistant"):
         st.markdown(answer)
@@ -213,5 +221,10 @@ if user_q:
                         excerpt = excerpt[:600].rstrip() + "…"
                     ttl = d.metadata.get("title") or d.metadata.get("source") or "Document"
                     st.markdown(f"**Passage {idx} — {ttl}**\n\n{excerpt}")
+        if details:
+            with st.expander("Details"):
+                st.markdown(f"- **Elapsed time:** {details['elapsed']:.2f} seconds")
+                st.markdown(f"- **Original question:** {details['original_question']}")
+                st.markdown(f"- **Standalone question:** {details['standalone_question']}")
 
     st.session_state.messages.append({"role": "assistant", "content": answer})
