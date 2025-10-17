@@ -1,4 +1,10 @@
 # chat_rag_url_ui.py
+import os
+import time
+
+os.environ.setdefault("USER_AGENT", "Mozilla/5.0 (compatible; Granite-URL-RAG/1.0)")
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
 import streamlit as st
 
 from langchain_community.document_loaders import WebBaseLoader
@@ -18,8 +24,8 @@ st.caption("Enter a URL (e.g., a Wikipedia page). The app fetches, chunks, embed
 # ----------------- Sidebar controls -----------------
 with st.sidebar:
     st.subheader("Settings")
-    default_url = "https://en.wikipedia.org/wiki/Bridget_Jones%27s_Baby"
-    url = st.text_input("Source URL", value=default_url, help="Any public web page. Wikipedia works great.")
+    default_url = "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
+    url = st.text_input("Source URL", value=default_url, help="Any public web page. Wikipedia works great.").strip()
     k = st.number_input("Top-K passages", min_value=1, max_value=8, value=2, step=1)
     chunk_size = st.number_input("Chunk size (chars)", min_value=200, max_value=4000, value=1200, step=100)
     chunk_overlap = st.number_input("Chunk overlap", min_value=0, max_value=1000, value=200, step=50)
@@ -38,6 +44,23 @@ if "rebuild_nonce" not in st.session_state:
 if rebuild:
     st.session_state.rebuild_nonce += 1
 
+# ----------------- Chat state priming -----------------
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+if clear:
+    st.session_state.messages = []
+    st.session_state.pop("last_loaded_url", None)
+    st.session_state.pop("last_retriever_signature", None)
+
+# Reset chat automatically when a new URL arrives
+if url:
+    if st.session_state.get("last_loaded_url") != url:
+        st.session_state.messages = []
+        st.session_state["last_loaded_url"] = url
+        st.session_state.pop("last_retriever_signature", None)
+else:
+    st.session_state.pop("last_loaded_url", None)
+
 # ----------------- Caching: model + retriever -----------------
 @st.cache_resource(show_spinner=False)
 def get_chat(model_name: str, temp: float):
@@ -45,6 +68,7 @@ def get_chat(model_name: str, temp: float):
 
 @st.cache_resource(show_spinner=True)
 def build_retriever(url: str, chunk_size: int, chunk_overlap: int, k: int, nonce: int):
+    start_time = time.perf_counter()
     # 1) Load the web page
     loader = WebBaseLoader([url])  # list form for compatibility
     raw_docs = loader.load()
@@ -64,16 +88,34 @@ def build_retriever(url: str, chunk_size: int, chunk_overlap: int, k: int, nonce
     # 4) Embed + index in memory
     emb = OllamaEmbeddings(model="nomic-embed-text")
     vs = FAISS.from_documents(chunks, emb)
-    return vs.as_retriever(search_kwargs={"k": k})
+    retriever = vs.as_retriever(search_kwargs={"k": k})
+    elapsed = time.perf_counter() - start_time
+    return retriever, elapsed
 
 # Build resources
 chat = get_chat(model, temperature)
 retriever = None
 error_building = None
+build_time = None
+
+chunk_size_val = int(chunk_size)
+chunk_overlap_val = int(chunk_overlap)
+k_val = int(k)
+
 try:
-    retriever = build_retriever(url, int(chunk_size), int(chunk_overlap), int(k), st.session_state.rebuild_nonce)
+    retriever, build_time = build_retriever(url, chunk_size_val, chunk_overlap_val, k_val, st.session_state.rebuild_nonce)
 except Exception as e:
     error_building = str(e)
+
+if build_time is not None and retriever is not None and not error_building:
+    signature = "|".join(map(str, [url, chunk_size_val, chunk_overlap_val, k_val, st.session_state.rebuild_nonce]))
+    if st.session_state.get("last_retriever_signature") != signature:
+        status_msg = (
+            f"I have read the source URL: {url}. "
+            f"It took me {build_time:.2f} seconds to process. Ask me a question about it."
+        )
+        st.session_state.messages.append({"role": "assistant", "content": status_msg})
+        st.session_state["last_retriever_signature"] = signature
 
 # ----------------- Prompts -----------------
 CONDENSE_PROMPT = ChatPromptTemplate.from_messages([
@@ -158,17 +200,18 @@ if user_q:
         if ctx_docs:
             with st.expander("Sources"):
                 # Show unique sources and titles; most chunks share the same source URL
-                shown = set()
-                for d in ctx_docs:
-                    src = d.metadata.get("source", "")
-                    ttl = d.metadata.get("title", src or "Document")
-                    key = (ttl, src)
-                    if key in shown:
+                seen = set()
+                for idx, d in enumerate(ctx_docs, start=1):
+                    excerpt = d.page_content.strip()
+                    if not excerpt:
                         continue
-                    shown.add(key)
-                    if src:
-                        st.markdown(f"- **{ttl}** — [{src}]({src})")
-                    else:
-                        st.markdown(f"- **{ttl}**")
+                    key = hash(excerpt)
+                    if key in seen:
+                        continue
+                    seen.add(key)
+                    if len(excerpt) > 600:
+                        excerpt = excerpt[:600].rstrip() + "…"
+                    ttl = d.metadata.get("title") or d.metadata.get("source") or "Document"
+                    st.markdown(f"**Passage {idx} — {ttl}**\n\n{excerpt}")
 
     st.session_state.messages.append({"role": "assistant", "content": answer})
