@@ -47,9 +47,12 @@ chat = ChatOllama(model="granite4:micro", temperature=0.2)
 
 # --- 1) Condense follow-up to standalone question ----------------------------
 condense_prompt = ChatPromptTemplate.from_messages([
-    ("system", "You turn follow-up questions into standalone questions using the chat history."),
+    ("system",
+     "Given a chat history and a follow-up question, rephrase the follow-up question "
+     "to be a standalone question that contains all necessary context from the history. "
+     "Output ONLY the reformulated question, nothing else. Do not answer the question."),
     MessagesPlaceholder("chat_history"),
-    ("human", "Rewrite the user question as a standalone question.\nQuestion: {question}")
+    ("human", "Follow-up question: {question}\nStandalone question:")
 ])
 condense_chain = condense_prompt | chat  # returns an AIMessage
 
@@ -69,6 +72,7 @@ def format_context(docs):
 def chat_loop():
     print("RAG chat ready. Ask about Bridget Jones. Type 'exit' to quit.\n")
     history = []  # list of HumanMessage/AIMessage
+    MAX_HISTORY_TURNS = 6  # Keep last 3 exchanges (6 messages)
 
     while True:
         user = input("You: ").strip()
@@ -77,8 +81,19 @@ def chat_loop():
             break
 
         # 1) Rephrase to standalone question (uses history)
-        standalone_q_msg = condense_chain.invoke({"chat_history": history, "question": user})
-        standalone_q = standalone_q_msg.content.strip()
+        if not history:
+            # First turn, no history needed
+            standalone_q = user
+        else:
+            # Trim history to prevent context overflow
+            recent_history = history[-MAX_HISTORY_TURNS:] if len(history) > MAX_HISTORY_TURNS else history
+            standalone_q_msg = condense_chain.invoke({"chat_history": recent_history, "question": user})
+            standalone_q = standalone_q_msg.content.strip()
+
+            # Validate it's a question, not an answer (fallback to original if malformed)
+            if len(standalone_q) > 200 or not any(word in standalone_q.lower() for word in ['who', 'what', 'when', 'where', 'why', 'how', 'is', 'does', 'did', 'can', 'tell', 'bridget', '?']):
+                print(f"[DEBUG] Standalone query might be malformed, using original question")
+                standalone_q = user
 
         # 2) Retrieve context based on standalone question
         ctx_docs = retriever.invoke(standalone_q)

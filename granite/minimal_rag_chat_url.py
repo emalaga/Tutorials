@@ -1,9 +1,16 @@
 # chat_rag_url_ui.py
 import os
 import time
+import textwrap
 
+# Set environment variables BEFORE importing any libraries
 os.environ.setdefault("USER_AGENT", "Mozilla/5.0 (compatible; Granite-URL-RAG/1.0)")
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
+# Disable async Milvus client to prevent event loop errors in Streamlit
+os.environ.setdefault("MILVUS_ASYNC_ENABLED", "FALSE")
+# Prevent docling from creating temporary databases
+os.environ.setdefault("DOCLING_DISABLE_DB", "TRUE")
 
 import streamlit as st
 
@@ -24,7 +31,7 @@ st.caption("Enter a URL (e.g., a Wikipedia page). The app fetches, chunks, embed
 # ----------------- Sidebar controls -----------------
 with st.sidebar:
     st.subheader("Settings")
-    default_url = "https://en.wikipedia.org/wiki/Bridget_Jones%27s_Baby"
+    default_url = "https://en.wikipedia.org/wiki/Pyotr_Ilyich_Tchaikovsky"
     url = st.text_input("Source URL", value=default_url, help="Any public web page. Wikipedia works great.").strip()
     k = st.number_input("Top-K passages", min_value=1, max_value=8, value=2, step=1)
     chunk_size = st.number_input("Chunk size (chars)", min_value=200, max_value=4000, value=1200, step=100)
@@ -156,6 +163,10 @@ def rag_answer(user_q: str, history, retriever, chat):
         "question": user_q
     }).content.strip()
 
+    print(f"[question] {user_q}")
+    print(f"[history] {lc_history}")
+    print(f"[standalone_q] {standalone_q}")
+
     # 2) Retrieve
     ctx_docs = retriever.invoke(standalone_q)
     context = fmt_context(ctx_docs)
@@ -226,5 +237,13 @@ if user_q:
                 st.markdown(f"- **Elapsed time:** {details['elapsed']:.2f} seconds")
                 st.markdown(f"- **Original question:** {details['original_question']}")
                 st.markdown(f"- **Standalone question:** {details['standalone_question']}")
+                prompt_text = details.get("prompt")
+                if prompt_text:
+                    st.markdown("- **Prompt:**")
+                    st.code(prompt_text, language="markdown")
+                st.markdown("- **Answer prompt template:**")
+                template_repr = repr(ANSWER_PROMPT)
+                wrapped_template = "\n".join(textwrap.wrap(template_repr, width=88))
+                st.text(wrapped_template)
 
     st.session_state.messages.append({"role": "assistant", "content": answer})

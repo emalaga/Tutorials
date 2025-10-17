@@ -63,6 +63,9 @@ def get_chat(model_name: str, temp: float):
 @st.cache_resource(show_spinner=True)
 def build_retriever_from_pdfbytes(file_hash: str, file_name: str, raw_bytes: bytes, k: int,
                                   embedding_model_id: str, nonce: int):
+    import time
+    start_time = time.perf_counter()
+
     # Persist the upload so Docling can read it
     with NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
         tmp.write(raw_bytes)
@@ -112,7 +115,9 @@ def build_retriever_from_pdfbytes(file_hash: str, file_name: str, raw_bytes: byt
         index_params={"index_type": "FLAT"},
         drop_old=True,
     )
-    return vectorstore.as_retriever(search_kwargs={"k": k})
+
+    elapsed = time.perf_counter() - start_time
+    return vectorstore.as_retriever(search_kwargs={"k": k}), elapsed
 
 
 # Build resources if a file is present
@@ -121,6 +126,7 @@ retriever = None
 error_building = None
 file_hash = None
 display_name = None
+build_time = None
 
 if uploaded_file is not None:
     uploaded_bytes = uploaded_file.getvalue()
@@ -131,11 +137,11 @@ if uploaded_file is not None:
 
     # Reset chat history when a new file is detected
     if st.session_state.get("last_loaded_file_hash") != file_hash:
-        st.session_state.messages = [{"role": "assistant", "content": default_greeting}]
+        st.session_state.messages = []
         st.session_state["last_loaded_file_hash"] = file_hash
 
     try:
-        retriever = build_retriever_from_pdfbytes(
+        retriever, build_time = build_retriever_from_pdfbytes(
             file_hash=file_hash,
             file_name=display_name,
             raw_bytes=uploaded_bytes,
@@ -145,6 +151,18 @@ if uploaded_file is not None:
         )
     except Exception as e:
         error_building = str(e)
+
+# Add confirmation message after successful file upload
+if build_time is not None and retriever is not None and not error_building:
+    # Create a signature to track if we've already added the message for this file
+    signature = f"{file_hash}|{st.session_state.rebuild_nonce}"
+    if st.session_state.get("last_retriever_signature") != signature:
+        status_msg = (
+            f"I have uploaded {display_name}. It took me {build_time:.2f} seconds. "
+            f"Ask me any questions about it."
+        )
+        st.session_state.messages.append({"role": "assistant", "content": status_msg})
+        st.session_state["last_retriever_signature"] = signature
 
 
 # ----------------- Prompts -----------------

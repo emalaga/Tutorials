@@ -1,4 +1,9 @@
 # chat_rag_ui.py
+import os
+
+# Allow duplicate OpenMP runtimes on macOS to prevent libomp init crash.
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
 import streamlit as st
 
 from langchain_community.vectorstores import FAISS
@@ -74,6 +79,8 @@ def rag_answer(user_q: str, history, retriever, chat):
     condense_chain = CONDENSE_PROMPT | chat
     standalone_q = condense_chain.invoke({"chat_history": to_lc_history(history), "question": user_q}).content.strip()
 
+    print(f"[Standalone Question] {standalone_q}")
+
     # 2) Retrieve
     ctx_docs = retriever.invoke(standalone_q)
     context = fmt_context(ctx_docs)
@@ -82,7 +89,7 @@ def rag_answer(user_q: str, history, retriever, chat):
     answer_chain = ANSWER_PROMPT | chat
     answer_msg = answer_chain.invoke({
         "chat_history": to_lc_history(history),
-        "question": standalone_q,
+        "question": user_q,
         "context": context
     })
     return answer_msg.content.strip(), ctx_docs
