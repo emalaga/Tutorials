@@ -28,8 +28,8 @@ with st.sidebar:
     st.subheader("Settings")
     uploaded_file = st.file_uploader("Upload a PDF", type=["pdf"])
     k = st.number_input("Top-K passages", min_value=1, max_value=8, value=3, step=1)
-    model = st.text_input("LLM model", value="granite4:micro")
-    embedding_model = st.text_input("Embedding model", value="sentence-transformers/all-MiniLM-L6-v2").strip() or "sentence-transformers/all-MiniLM-L6-v2"
+    model = st.text_input("LLM model", value="granite4:micro", disabled=True)
+    embedding_model = st.text_input("Embedding model", value="sentence-transformers/all-MiniLM-L6-v2", disabled=True).strip() or "sentence-transformers/all-MiniLM-L6-v2"
     temperature = st.slider("Temperature", 0.0, 1.0, 0.2, 0.1)
 
     col1, col2 = st.columns(2)
