@@ -6,6 +6,10 @@ from langchain_ollama import OllamaLLM, OllamaEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 
+import os
+
+os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
+
 # ---- Your tiny KB (JSON) ----------------------------------------------------
 documents = [
     {
